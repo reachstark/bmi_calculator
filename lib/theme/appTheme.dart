@@ -28,6 +28,11 @@ const question2 = 'How to lose weight?';
 const question3 = 'How to gain weight?';
 const question4 = 'How to maintain a healthy weight?';
 const question5 = 'What is the formula BMI calculator based on?';
+const question6 = 'Does BMI measure body fat?';
+const question7 = 'Is BMI officially recognized?';
+const question8 = 'Is BMI used by doctors?';
+const question9 = 'Is BMI used by insurers?';
+const question10 = 'Are there any other measures I could use?';
 
 // Answer lists
 const answer1 =
@@ -40,6 +45,16 @@ const answer4 =
     'Here are some tips: \n\n• Eat a healthy diet that includes plenty of fruits, vegetables, and whole grains. \n\n• Limit your intake of processed foods, sugary drinks, and unhealthy fats. \n\n• Be physically active for at least 30 minutes most days of the week. \n\n• Make gradual changes to your lifestyle that you can stick with in the long term.';
 const answer5 =
     'BMI is calculated by dividing a person\'s weight in kilograms by their height in meters squared. \n\nThe formula: \nBMI = weight (kg) / height (m)^2 \n\nThe World Health Organization (WHO) defines the following BMI categories: \n• Underweight: BMI < 18.5 \n• Normal weight: BMI 18.5–24.9 \n• Overweight: BMI 25–29.9 \n• Obesity: BMI ≥ 30';
+const answer6 =
+    'BMI does not directly measure body fat. BMI is a proxy measure of body fat based on the variables of weight and height, and as such it provides an estimation only. Because BMI does not provide a direct measure of body fat, its use is confined to certain people. For example, it should not be used for pregnant females, for people under the age of 18 or over the age of 65, or for those who have developed significant muscle mass through physical activity.';
+const answer7 =
+    'Yes, BMI is officially recognised by the World Health Organisation, and it is endorsed by a wide range of government agencies and medical organisations throughout the world. This official recognition has led to BMI being used extensively in both the public and private sectors in all developed countries.';
+const answer8 =
+    'Yes, BMI is used by doctors from general practice through to specialist level. Its use in the medical field is not limited to doctors, but extends to a wide range of health professionals including nurses, dieticians, nutritionists, epidemiologists and research scientists.';
+const answer9 =
+    'Yes, BMI is used by life and health insurers when assessing applications for life, health, trauma, income protection and permanent disability insurance. On its own it can act as a trigger point for requesting medical examinations or tests, but it is more often used in combination with other health factors and particular health conditions.';
+const answer10 =
+    'Yes, there are other measures you could use in addition to BMI, and these relate to waist metrics. While BMI can indicate healthy and unhealthy levels of body fat, it is not able to measure how fat is distributed in the body, and this is an important factor. For example, two people of the same gender and ethnicity, and who have an identical BMI, could have very different distributions of body fat. One could, for example, be centrally obese while the other is not. Excess amounts of abdominal (or visceral) fat can be much more harmful than other types of stored fat.';
 
 // Card Customization
 const activeCardColor = Color(0xC73B3279);
@@ -54,6 +69,12 @@ const maxHeight = 250.0;
 const myProfileImage = 'assets/images/Reach_Suit.jpg';
 
 // Text Styling
+const sliverAppBarStyle = TextStyle(
+  color: Colors.white,
+  fontWeight: FontWeight.bold,
+  fontSize: 20,
+);
+
 const alertDialogTitle = TextStyle(
   fontFamily: 'Poppins',
   fontSize: 18,
