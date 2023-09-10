@@ -17,6 +17,11 @@ class _FAQPageState extends State<FAQPage> {
     question3,
     question4,
     question5,
+    question6,
+    question7,
+    question8,
+    question9,
+    question10,
   ];
 
   List<String> answers = [
@@ -25,6 +30,11 @@ class _FAQPageState extends State<FAQPage> {
     answer3,
     answer4,
     answer5,
+    answer6,
+    answer7,
+    answer8,
+    answer9,
+    answer10,
   ];
 
   @override
@@ -33,6 +43,13 @@ class _FAQPageState extends State<FAQPage> {
       body: CustomScrollView(
         slivers: [
           const SliverAppBar(
+            pinned: true,
+            expandedHeight: 230,
+            flexibleSpace: FlexibleSpaceBar(
+              background: Image(
+                image: AssetImage('assets/images/sliverappbar_image.png'),
+              ),
+            ),
             title: Text(
               'FAQs',
               style: TextStyle(fontFamily: 'Poppins'),
@@ -70,10 +87,13 @@ class _FAQPageState extends State<FAQPage> {
                     },
                   );
                 },
-                child: ListTile(
-                  title: Text(
-                    '${index + 1}. $question',
-                    style: const TextStyle(fontFamily: 'Poppins'),
+                child: Padding(
+                  padding: const EdgeInsets.only(left: 8, right: 8, top: 5),
+                  child: ListTile(
+                    title: Text(
+                      '${index + 1}. $question',
+                      style: const TextStyle(fontFamily: 'Poppins'),
+                    ),
                   ),
                 ),
               );
